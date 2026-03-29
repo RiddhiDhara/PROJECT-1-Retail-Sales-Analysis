@@ -186,7 +186,7 @@ Feel free to fork this repository and enhance it further.
 
 ## 📌 Author
 
-**Riddhi Dhara**
+**Riddhi Dhara**  
 Computer Science Engineer | Aspiring ML Engineer
 
 ---
