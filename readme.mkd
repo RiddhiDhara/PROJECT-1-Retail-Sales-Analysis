@@ -1,0 +1,196 @@
+# 📊 Retail Sales Analysis Dashboard
+
+A **dynamic, SQL-driven analytics dashboard** built using **Python, Streamlit, and SQL Server**, designed to analyze retail sales data and visualize key business insights in real time.
+
+---
+
+## 🚀 Project Overview
+
+This project demonstrates an **end-to-end data analytics workflow**, starting from raw data processing in SQL to building an interactive dashboard in Python.
+
+Unlike traditional dashboards, this system is **modular and scalable**, where:
+
+* SQL queries are stored separately
+* Python dynamically reads and executes them
+* Results are visualized instantly
+
+---
+
+## 🧠 Key Features
+
+* 📂 **Modular SQL Architecture** – Each business query is stored as a separate `.sql` file
+* ⚡ **Dynamic Query Execution** – Python reads and runs SQL files automatically
+* 📊 **Interactive Dashboard** – Built with Streamlit
+* 📈 **Custom Visualizations** – Bar, Line, and Scatter charts using Plotly
+* 📌 **KPI Metrics** – Automatic summary insights from query results
+* 🎯 **Sidebar Navigation** – Clean and user-friendly interface
+* 🔄 **Real-Time Data Rendering** – No hardcoding, fully dynamic
+
+---
+
+## 🏗️ Project Structure
+
+```
+PROJECT_1_RETAIL_SALES_ANALYSIS/
+│
+├── CODE/                          # Original SQL pipeline (untouched)
+│   ├── P1_Database_creation.sql
+│   ├── P2_Table_creation.sql
+│   ├── P3_Data_cleaning.sql
+│   ├── P4_Data_exploration.sql
+│   └── P5_Data_Analysis_Business_Questions.sql
+│
+├── SQL/Analysis/                  # Dashboard SQL queries
+│   ├── Q1_sales_on_date.sql
+│   ├── Q2_clothing_transactions.sql
+│   ├── Q3_sales_per_category.sql
+│   ├── Q4_avg_age_beauty.sql
+│   ├── Q5_high_value_transactions.sql
+│   ├── Q6_transactions_by_gender_category.sql
+│   ├── Q7_avg_daily_sales_per_month.sql
+│   ├── Q8_top_customers.sql
+│   ├── Q9_unique_customers_per_category.sql
+│   └── Q10_shift_orders.sql
+│
+├── Dataset/
+│   └── SQL - Retail Sales Analysis_utf.csv
+│
+├── app.py                         # Streamlit dashboard
+├── requirements.txt               # Python dependencies
+└── README.md                      # Project documentation
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Streamlit**
+* **Pandas**
+* **PyODBC**
+* **SQL Server**
+* **Plotly**
+
+---
+
+## 🔗 Database Setup
+
+1. Open **SQL Server Management Studio (SSMS)**
+
+2. Run the scripts in the `CODE/` folder in order:
+
+   * Database creation
+   * Table creation
+   * Data cleaning
+   * Data exploration
+
+3. Ensure database name:
+
+```
+MyProject1
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+
+```
+git clone <your-repo-link>
+cd PROJECT_1_RETAIL_SALES_ANALYSIS
+```
+
+### 2️⃣ Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### 3️⃣ Configure Database Connection
+
+In `app.py`, update:
+
+```
+SERVER=your_server_name
+```
+
+Example:
+
+```
+SERVER=localhost\\SQLEXPRESS
+```
+
+---
+
+## ▶️ Run the Application
+
+```
+streamlit run app.py
+```
+
+Then open:
+
+```
+http://localhost:8501
+```
+
+---
+
+## 📊 Business Questions Solved
+
+* Sales on a specific date
+* Clothing transactions in a given period
+* Total sales per category
+* Average age of beauty customers
+* High-value transactions
+* Transactions by gender and category
+* Monthly average sales trends
+* Top 5 customers by revenue
+* Unique customers per category
+* Order distribution by shift
+
+---
+
+## 💡 Key Learnings
+
+* Designing modular SQL-based systems
+* Integrating SQL Server with Python
+* Building interactive dashboards using Streamlit
+* Handling real-world data analysis workflows
+* Structuring scalable analytics projects
+
+---
+
+## 🚀 Future Enhancements
+
+* Add filters (date, category, gender)
+* Implement authentication system
+* Deploy dashboard online
+* Add advanced KPIs and trend analysis
+* Integrate machine learning models
+
+---
+
+## 💼 Resume Highlight
+
+> Built a dynamic retail analytics dashboard using Python and SQL Server that executes modular SQL queries and visualizes real-time business insights using Streamlit.
+
+---
+
+## 🤝 Contribution
+
+Feel free to fork this repository and enhance it further.
+
+---
+
+## 📌 Author
+
+**Riddhi Dhara**
+Computer Science Engineer | Aspiring ML Engineer
+
+---
+
+## ⭐ If you like this project
+
+Give it a star ⭐ and share it!
